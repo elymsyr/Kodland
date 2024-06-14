@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}">
+    <title>Result</title>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ name }}, your score is: {{ score }} out of {{ total }}</h1>
+        {% if highest_score is not none %}
+        <h2>The highest score is {{ highest_score }} by {{ highest_scorer }}</h2>
+        {% endif %}
+        <a href="{{ url_for('index') }}">Go to Home</a>
+    </div>
+</body>
+<footer, id="author">Written by Orhun Eren Yalçınkaya</footer>
+</html>

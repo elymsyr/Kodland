@@ -1,0 +1,11 @@
+question,option1,option2,option3,option4,answer
+What does AI stand for?,Artificial Intelligence,Automatic Intelligence,Automated Interface,Artificial Interface,Artificial Intelligence
+Which programming language is primarily used for AI development?,Python,JavaScript,HTML,CSS,Python
+What is Flask in Python?,A web framework,A data analysis library,An IDE,A version control system,A web framework
+Which method is used to start a Flask application?,run(),start(),init(),begin(),run()
+What is the correct file extension for Python files?,.py,.pt,.pyt,.python,.py
+Which of the following is a Python web framework?,Django,Numpy,Pandas,Scikit-learn,Django
+What is the main purpose of the `request` module in Flask?,To handle HTTP requests,To handle database connections,To handle user authentication,To manage sessions,To handle HTTP requests
+Which command is used to install Flask via pip?,pip install Flask,pip get Flask,pip Flask install,pip add Flask,pip install Flask
+What is the purpose of the `__init__.py` file in a Python package?,To mark a directory as a Python package,To initialize a Python file,To create a virtual environment,To start a Python server,To mark a directory as a Python package
+Which method in Flask is used to define a route for a URL?,@app.route,@app.path,@app.url,@app.link,@app.route

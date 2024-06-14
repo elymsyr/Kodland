@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}">
+    <title>Quiz</title>
+</head>
+<body>
+    <div>
+        <div id="score">The highest score is {{ highest_score }} by {{ highest_scorer }}</div>
+        <h1>QUIZ</h1>
+        <form action="{{ url_for('result') }}" method="POST">
+            <div class="name-input">
+                <label for="name">Enter your name:</label>
+                <input type="text" id="name" name="name" required>            
+            {% for question in questions %}
+            <div class="question">
+                <p>{{ question[1] }}</p>
+                <input type="radio" name="{{ question[0] }}" value="{{ question[2] }}"> {{ question[2] }}<br>
+                <input type="radio" name="{{ question[0] }}" value="{{ question[3] }}"> {{ question[3] }}<br>
+                <input type="radio" name="{{ question[0] }}" value="{{ question[4] }}"> {{ question[4] }}<br>
+                <input type="radio" name="{{ question[0] }}" value="{{ question[5] }}"> {{ question[5] }}<br>
+            </div>
+            {% endfor %}
+            <input class="submit" type="submit" value="Submit">
+            <a class="submit" href="{{ url_for('index') }}">Menü</a>
+        </form>
+    </div>
+</body>
+<footer, id="author">Written by Orhun Eren Yalçınkaya</footer>
+</html>

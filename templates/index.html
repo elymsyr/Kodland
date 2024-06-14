@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}">
+    <title>Quiz Website</title>
+</head>
+<body>
+    <div id="score">The highest score is {{ highest_score }} by {{ highest_scorer }}</div>
+    <div class="container">
+        <h1>Welcome to the Quiz Website</h1>
+        <a href="{{ url_for('quiz') }}">Start Quiz</a>
+    </div>
+</body>
+<footer, id="author">Written by Orhun Eren Yalçınkaya</footer>
+</html>
