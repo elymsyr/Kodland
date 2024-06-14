@@ -1,14 +1,14 @@
 question,option1,option2,option3,option4,answer
-Yapay zeka modellerinde eğitim sürecini hızlandırmak için hangi donanım daha önemlidir?,CPU,RAM,GPU,SSD,GPU
-Hangisi bir yol bulma algoritmasıdır?,A* Algoritması,Naive Bayes,K-Means,Decision Trees,A* Algoritması
-Python'da bilgisayar görüşü uygulamalarında kullanılan en popüler kütüphane hangisidir?,OpenCV,BeautifulSoup,PyTorch,TensorFlow,OpenCV
-Flask nedir?,Bir web framework,Bir veri analizi kütüphanesi,Bir IDE,Bir versiyon kontrol sistemi,Bir web framework
-Bir görüntüde belirli nesneleri tanımak için kullanılan teknik hangisidir?,Nesne tespiti,Sınıflandırma,Segmentasyon,Renk dönüştürme,Nesne tespiti
-Python'da metin verilerini temizlemek ve önişlemek için kullanılan bir yöntem hangisidir?,Tokenization,Normalization,Lemmatization,Hepsi,Hepsi
-Bilgisayar görüşünde kullanılan ve görüntüleri küçük parçalara bölerek özellikleri çıkaran yöntem hangisidir?,Convolutional Neural Networks (CNN),Recurrent Neural Networks (RNN),Support Vector Machines (SVM),Decision Trees,Convolutional Neural Networks (CNN)
-Python'da bir görüntüyü okuma ve ekranda gösterme işlemi hangi OpenCV fonksiyonları ile yapılır?,cv2.read(), cv2.show(),cv2.imread(), cv2.imshow(),cv2.load(), cv2.display(),cv2.open(), cv2.view(),cv2.imread(), cv2.imshow()
-Doğal dil işleme (NLP) alanında metin verilerini işlemek için kullanılan yaygın bir Python kütüphanesi hangisidir?,Numpy,Scipy,NLTK,Matplotlib,NLTK
-AI kelimesinin anlamı nedir?,Yapay Zeka,Otomatik Zeka,Otomatik Arayüz,Yapay Arayüz,Yapay Zeka
-Yapay zeka geliştirme için yaygın olarak kullanılan programlama dili hangisidir?,Python,JavaScript,HTML,CSS,Python
-Python'da bir yapay zeka modelini değerlendirirken hangi metrik, sınıflandırma problemlerinde modelin doğruluğunu ölçmek için kullanılır?,MSE (Mean Squared Error),MAE (Mean Absolute Error),Accuracy,R^2 (R-squared),Accuracy
-Aşağıdakilerden hangisi bir yapay zeka alt alanı değildir?,Makine Öğrenimi,Derin Öğrenme,Robotik,HTML,HTML
+Which hardware is more important to speed up the training process in artificial intelligence models?,CPU,RAM,GPU,SSD,GPU
+Which one is a pathfinding algorithm?,A* Algorithm,Naive Bayes,K-Means,Decision Trees,A* Algorithm
+What is the most popular library used in computer vision applications in Python?,OpenCV,BeautifulSoup,PyTorch,TensorFlow,OpenCV
+What is Flask?,A web framework,A data analysis library,An IDE,A version control system,A web framework
+Which technique is used to recognize specific objects in an image?,Object detection,Classification,Segmentation,Color conversion,Object detection
+Which method is used in Python to clean and preprocess text data?,Tokenization,Normalization,Lemmatization,All of them,All of them
+Which method is used in computer vision to divide images into small parts and extract features?,Convolutional Neural Networks (CNN),Recurrent Neural Networks (RNN),Support Vector Machines (SVM),Decision Trees,Convolutional Neural Networks (CNN)
+Which OpenCV functions are used in Python to read and display an image?,cv2.read(), cv2.show(),cv2.imread(), cv2.imshow(),cv2.load(), cv2.display(),cv2.open(), cv2.view(),cv2.imread(), cv2.imshow()
+Which is a common Python library used for processing text data in the field of natural language processing (NLP)?,Numpy,Scipy,NLTK,Matplotlib,NLTK
+What does the term AI stand for?,Artificial Intelligence,Automatic Intelligence,Automatic Interface,Artificial Interface,Artificial Intelligence
+Which programming language is commonly used for artificial intelligence development?,Python,JavaScript,HTML,CSS,Python
+Which metric is used in Python to evaluate a machine learning model for classification problems?,MSE (Mean Squared Error),MAE (Mean Absolute Error),Accuracy,R^2 (R-squared),Accuracy
+Which of the following is not a subfield of artificial intelligence?,Machine Learning,Deep Learning,Robotics,HTML,HTML

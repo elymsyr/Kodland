@@ -1,8 +1,8 @@
-from flask import Flask, render_template, request
+import flask
 import sqlite3
 import csv
 
-app = Flask(__name__)
+app = flask.Flask(__name__)
 
 def init_db():
     conn = sqlite3.connect('quiz.db')
@@ -44,7 +44,7 @@ def import_questions_from_csv(filepath):
 @app.route('/')
 def index():
     highest_score, highest_scorer = get_highest_score()
-    return render_template('index.html', highest_score=highest_score, highest_scorer=highest_scorer)
+    return flask.render_template('index.html', highest_score=highest_score, highest_scorer=highest_scorer)
 
 @app.route('/quiz')
 def quiz():
@@ -54,18 +54,18 @@ def quiz():
     questions = cursor.fetchall()
     conn.close()
     highest_score, highest_scorer = get_highest_score()
-    return render_template('quiz.html', questions=questions, highest_score=highest_score, highest_scorer=highest_scorer)
+    return flask.render_template('quiz.html', questions=questions, highest_score=highest_score, highest_scorer=highest_scorer)
 
 @app.route('/result', methods=['POST'])
 def result():
     score = 0
-    name = request.form.get('name')
+    name = flask.request.form.get('name')
     conn = sqlite3.connect('quiz.db')
     cursor = conn.cursor()
     cursor.execute('SELECT * FROM questions')
     questions = cursor.fetchall()
     for question in questions:
-        selected_option = request.form.get(str(question[0]))
+        selected_option = flask.request.form.get(str(question[0]))
         if selected_option == question[6]:
             score += 1
     cursor.execute('''
@@ -74,7 +74,7 @@ def result():
     conn.commit()
     conn.close()
     highest_score, highest_scorer = get_highest_score()
-    return render_template('results.html', score=score, total=len(questions), name=name, highest_score=highest_score, highest_scorer=highest_scorer)
+    return flask.render_template('results.html', score=score, total=len(questions), name=name, highest_score=highest_score, highest_scorer=highest_scorer)
 
 def get_highest_score():
     conn = sqlite3.connect('quiz.db')
@@ -87,6 +87,6 @@ def get_highest_score():
     return None, None
 
 if __name__ == '__main__':
-    init_db()
+    # init_db()
     # import_questions_from_csv('questions.csv')
     app.run(debug=True)
