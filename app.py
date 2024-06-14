@@ -4,7 +4,6 @@ import csv
 
 app = Flask(__name__)
 
-# Veritabanı bağlantısı ve tablo oluşturma
 def init_db():
     conn = sqlite3.connect('quiz.db')
     cursor = conn.cursor()
@@ -29,7 +28,6 @@ def init_db():
     conn.commit()
     conn.close()
 
-# CSV dosyasından soruları içeri aktarma
 def import_questions_from_csv(filepath):
     conn = sqlite3.connect('quiz.db')
     cursor = conn.cursor()
@@ -90,6 +88,5 @@ def get_highest_score():
 
 if __name__ == '__main__':
     init_db()
-    # Sadece ilk çalıştırmada CSV'den soruları içeri aktarmak için bu satırı kullanın:
     # import_questions_from_csv('questions.csv')
     app.run(debug=True)
