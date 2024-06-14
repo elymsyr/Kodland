@@ -5,7 +5,7 @@ import csv
 app = flask.Flask(__name__)
 
 def init_db():
-    conn = sqlite3.connect('static/quiz.db')
+    conn = sqlite3.connect('quiz.db')
     cursor = conn.cursor()
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS questions (
@@ -29,7 +29,7 @@ def init_db():
     conn.close()
 
 def import_questions_from_csv(filepath):
-    conn = sqlite3.connect('static/quiz.db')
+    conn = sqlite3.connect('quiz.db')
     cursor = conn.cursor()
     with open(filepath, newline='', encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile)
@@ -48,7 +48,7 @@ def index():
 
 @app.route('/quiz')
 def quiz():
-    conn = sqlite3.connect('static/quiz.db')
+    conn = sqlite3.connect('quiz.db')
     cursor = conn.cursor()
     cursor.execute('SELECT * FROM questions')
     questions = cursor.fetchall()
@@ -60,7 +60,7 @@ def quiz():
 def result():
     score = 0
     name = flask.request.form.get('name')
-    conn = sqlite3.connect('static/quiz.db')
+    conn = sqlite3.connect('quiz.db')
     cursor = conn.cursor()
     cursor.execute('SELECT * FROM questions')
     questions = cursor.fetchall()
@@ -77,7 +77,7 @@ def result():
     return flask.render_template('results.html', score=score, total=len(questions), name=name, highest_score=highest_score, highest_scorer=highest_scorer)
 
 def get_highest_score():
-    conn = sqlite3.connect('static/quiz.db')
+    conn = sqlite3.connect('quiz.db')
     cursor = conn.cursor()
     cursor.execute('SELECT name, score FROM scores ORDER BY score DESC, id ASC LIMIT 1')
     row = cursor.fetchone()
