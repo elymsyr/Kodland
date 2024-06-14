@@ -1,0 +1,78 @@
+TUR_Python Pro test
+Toplam puan
+7/11
+ 
+Merhaba, bu test Python Pro bilginizi sınamak için gereklidir. Testi geçebilmek için en az 9 puan almalısınız.
+Adınız - Soyadınız:
+*
+Orhun Eren Yalçınkaya
+Telegramınızın bağlantısı:
+*
+t.me/eeebyby
+ 
+Python'da değişken adı olarak "list" kelimesini kullanmak iyi bir tercih mıdır?
+*
+1/1
+Evet
+Hayır
+ 
+ 
+Python'da başka fonksiyonları parametre olarak kabul eden ve bir fonksiyon döndüren fonksiyona ne ad verilir? (kısaltmayı yazın)
+*
+···
+/1
+High-order
+ 
+ 
+Kodland'da hangi web framework'ü öğretiliyor?
+*
+1/1
+Django
+Flask
+ 
+Fast API
+ 
+Python'da birden fazla sınıftan miras almak mümkün değildir
+*
+1/1
+Doğru
+Yanlış
+ 
+ 
+Bu veri türlerinden hangisi değişmez?
+*
+0/1
+Tuple
+ 
+List
+String
+Dictionary
+ 
+Bir sınıfın gövdesi içinde tanımlanan fonksiyonun adı nedir?
+*
+···
+/2
+Metot
+ 
+ 
+Bir sınıf her başlatıldığında hangi yöntem çağrılır? (fazladan yorum eklemeyin)
+*
+2/2
+__init__
+ 
+ 
+Python'da nesne olarak ne kabul edilir?
+*
+2/2
+Sınıfın başlatılmasının bir sonucu
+İşlev tarafından döndürülen bir değer
+Her şey
+ 
+Projenizin bulunduğu  linki 
+*
+elymsyr.pythonanywhere.com
+Projenizin çalıştığını kanıtladığınız bir ekran kaydı gönderin. (Kaydınızı Google Drive'a yükleyin ve erişim izinlerini "Herkes" için ayarlayın)
+*
+https://drive.google.com/drive/folders/1WuupjTgJeT2HfHZnj_Ww2XDKHJSA_ryD?usp=sharing
+Bu içerik Google tarafından oluşturulmamış veya onaylanmamıştır. Kötüye Kullanımı Bildirme - Hizmet Şartları - Gizlilik Politikası
+Google Formlar
